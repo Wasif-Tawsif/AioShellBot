@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: aioshbot86
+    env: docker
+    region: singapore
+    plan: free
+    branch: master
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        value: 5538727966:AAFHXWShmJFzD0CSQvOCwEuvRSL1OJtNp4w
+      - key: OWNER_ID
+        value: 2127161530
